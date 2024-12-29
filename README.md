@@ -1,3 +1,5 @@
+# ONLY FOR NEO BULLX
+
 # DESCRIPTION
 
 This extension helps you open all social media links and automatically copy the Twitter username to the clipboard.
