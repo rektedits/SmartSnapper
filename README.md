@@ -18,14 +18,14 @@ You'll save around 20-30 seconds of your workflow :)
 <br>
 <br>
 <br>
-3. Step: Extract the files
+2. Step: Extract the files
 <br>
 <img src="https://github.com/user-attachments/assets/572ab2be-493b-4c2d-857e-225372d67aad" alt="Screenshot 2024-12-29 185728" width="700">
 <br>
 <br>
 <br>
 <br>
-4. Step: Add the extracted files to your Chrome Extensions
+3. Step: Add the extracted files to your Chrome Extensions
 <br>
 <br>
 - Paste "chrome://extensions/" in your Google Chromes search bar and hit enter<br>
@@ -38,4 +38,4 @@ You'll save around 20-30 seconds of your workflow :)
 <br>
 <br>
 <br>
-5. Step: Enjoy!
+4. Step: Enjoy!
