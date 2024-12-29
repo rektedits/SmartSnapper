@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Smart Snapper",
+  "version": "1.0",
+  "description": "An extension to open social media links and analyze images with Google Lens.",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon.png"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "https://uxwing.com/*"
+  ],
+  "icons": {
+    "48": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://neo.bullx.io/"
+      ],
+      "js": ["openSocials.js"]
+    }
+  ]
+}

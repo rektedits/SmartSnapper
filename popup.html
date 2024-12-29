@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Social Links Opener</title>
+  <script src="popup.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      width: 300px;
+      height: 330px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+    }
+    h1 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 14px;
+      color: #666;
+      text-align: center;
+      margin: 0 0 10px 0;
+      padding: 0 10px;
+    }
+    button {
+      margin: 5px 0;
+      width: 80%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    #links-container {
+      width: 90%;
+      max-height: 100px;
+      overflow-y: auto;
+      text-align: left;
+      padding: 10px;
+      box-sizing: border-box;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-top: 10px;
+      min-height: 40px; /* Set a minimum height */
+      max-height: 40px; /* Set a maximum height */
+    }
+    #links-container div {
+      padding: 0px;
+      border-bottom: 1px solid #ddd;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    #links-container div:last-child {
+      border-bottom: none;
+    }
+    #message-container {
+      color: green;
+      margin-top: 10px;
+      font-size: 14px;
+      text-align: center;
+      min-height: 40px; /* Set a minimum height */
+      max-height: 40px; /* Set a maximum height */
+    }
+    #buy-me-a-coffee {
+      color: #007bff;
+      text-decoration: underline;
+      cursor: pointer;
+      margin-top: 10px;
+      font-size: 16px; /* Make the label bigger */
+      display: flex;
+      align-items: center;
+    }
+    #buy-me-a-coffee i {
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Social Links Opener</h1>
+  <p>This extension helps you open all social media links and automatically copy the Twitter username to the clipboard.</p>
+  <p>It also opens the Tokens image in Google Lens for further analysis.</p>
+  <button id="open-socials-button">Open All Socials</button>
+  <div id="links-container"></div>
+  <div id="message-container"></div>
+  <div id="buy-me-a-coffee">Buy me a coffee<i class="fas fa-coffee"></i></div>
+</body>
+</html>
