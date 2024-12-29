@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (buyMeACoffeeLabel) {
     buyMeACoffeeLabel.addEventListener('click', () => {
-      navigator.clipboard.writeText('BUXGKMBPUbQe7t1y4RvdM3P5Veh79M7mVtEknaQ92Ab9').then(() => {
+      navigator.clipboard.writeText('4dBQDFhqu5PLWNxxnshtkJAxqWxpGvsHzLhDYwEUoDiV').then(() => {
         console.log('SOLANA Wallet-Address copied to clipboard!');
         messageContainer.style.color = 'green';
         messageContainer.textContent = 'SOLANA Wallet-Address copied to clipboard!';
