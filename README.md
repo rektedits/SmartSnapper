@@ -4,4 +4,4 @@ This extension helps you open all social media links and automatically copy the 
 
 It also opens the Tokens image in Google Lens for further analysis.
 
-You'll save around 10-20 seconds of your workflow :) 
+You'll save around 20-30 seconds of your workflow :) 
