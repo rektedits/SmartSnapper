@@ -6,7 +6,9 @@ This extension helps you open all social media links and automatically copy the 
 
 It also opens the Tokens image in Google Lens for further analysis.
 
-You'll save around 20-30 seconds of your workflow :) 
+You'll save around 20-30 seconds of your workflow :)
+
+Make sure to join the Topblast Discord-Server (https://discord.gg/topblast) in order to use the "Checl X Reuse" button!
 <br>
 <br>
 

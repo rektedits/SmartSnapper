@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Social Links Opener</title>
+  <title>Smart Snapper</title>
   <script src="popup.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     body {
       width: 300px;
-      height: 330px;
+      height: 300px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       overflow: hidden;
       margin: 0;
@@ -21,6 +21,7 @@
     h1 {
       font-size: 18px;
       color: #333;
+      margin-top: 20px;
       margin-bottom: 10px;
     }
     p {
@@ -41,6 +42,7 @@
       font-size: 14px;
       cursor: pointer;
       transition: background-color 0.3s ease;
+      position: relative; /* Added for tooltip positioning */
     }
     button:hover {
       background-color: #0056b3;
@@ -80,7 +82,8 @@
       color: #007bff;
       text-decoration: underline;
       cursor: pointer;
-      margin-top: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px; /* Added margin-bottom */
       font-size: 16px; /* Make the label bigger */
       display: flex;
       align-items: center;
@@ -88,15 +91,53 @@
     #buy-me-a-coffee i {
       margin-left: 5px;
     }
+    .link {
+      color: #007bff;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .warning {
+      color: red;
+      font-size: 11px;
+      text-align: center;
+      margin-top: 10px;
+    }
+    .tooltip {
+      visibility: hidden;
+      width: 250px; /* Increased width */
+      background-color: #555555ce;
+      color: #fff;
+      text-align: center;
+      border-radius: 5px;
+      padding: 5px;
+      position: absolute;
+      z-index: 1;
+      top: 125%; /* Position the tooltip below the button */
+      left: 50%;
+      margin-left: -125px; /* Adjusted for new width */
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    button:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
+    .tooltip-delay {
+      transition-delay: 0.5s; /* Add delay for tooltip */
+    }
   </style>
 </head>
 <body>
-  <h1>Social Links Opener</h1>
-  <p>This extension helps you open all social media links and automatically copy the Twitter username to the clipboard.</p>
-  <p>It also opens the Tokens image in Google Lens for further analysis.</p>
-  <button id="open-socials-button">Open All Socials</button>
+  <h1>Smart Snapper</h1>
+  <button id="check-x-reuse-button">Check X Reuse
+    <span class="tooltip tooltip-delay">Opens the "scan" channel on Topblast-Server. Just paste (strg + v) after directed to the channel.</span>
+  </button>
+  <button id="open-socials-button">Open All Socials
+    <span class="tooltip tooltip-delay">Opens all social media links, Tokens image in Google Lens and automatically copies the Twitter username to the clipboard.</span>
+  </button>
   <div id="links-container"></div>
   <div id="message-container"></div>
+  <p class="warning">Refresh the page if the extension doesn't work properly!</p>
   <div id="buy-me-a-coffee">Buy me a coffee<i class="fas fa-coffee"></i></div>
 </body>
 </html>
